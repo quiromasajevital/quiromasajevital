@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO BÁSICO -->
+    <title>Quiromasaje Vital - Francisco Pérez Toledo | Masajes en Tenerife</title>
+    <meta name="description" content="Quiromasaje Vital en S/C de Tenerife. Francisco Pérez Toledo, quiromasajista integrativo. Especialistas en masajes descontracturantes, deportivos, drenantes y ventosaterapia. Reserva tu cita hoy mismo.">
+    <meta name="keywords" content="quiromasaje tenerife, masaje santa cruz de tenerife, masaje descontracturante, masaje deportivo, ventosaterapia, francisco pérez toledo, bienestar integral">
+    <meta name="author" content="Francisco Pérez Toledo">
+    
+    <!-- OPEN GRAPH (Para Redes Sociales) -->
+    <meta property="og:title" content="Quiromasaje Vital - Bienestar Integral en Tenerife">
+    <meta property="og:description" content="Tratamientos de quiromasaje integrativo, deportivo y drenante. Recupera tu vitalidad con Francisco Pérez Toledo.">
+    <meta property="og:image" content="https://tuusuario.github.io/quiromasaje-vital/Logo Quiromasaje.jpg"> <!-- Ajusta esta URL cuando subas la web -->
+    <meta property="og:url" content="https://tuusuario.github.io/quiromasaje-vital/">
+    <meta property="og:type" content="website">
+
+    <!-- CANONICAL -->
+    <link rel="canonical" href="https://tuusuario.github.io/quiromasaje-vital/">
+
+    <!-- Importar fuentes de Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Importar FontAwesome para los iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    
+    <style>
+        /* --- Variables de Color --- */
+        :root {
+            --primary-blue: #4A90A4; 
+            --secondary-green: #8BC34A; 
+            --dark-text: #333333;
+            --light-bg: #f9fbfc;
+            --white: #ffffff;
+            --border-color: #e0e0e0;
+            --whatsapp-green: #25D366;
+             
+            /* Colores Redes Sociales */
+            --facebook-color: #1877F2;
+            --instagram-color: #E4405F;
+            --tiktok-color: #000000;
+            --linkedin-color: #0A66C2;
+        }
+
+        /* --- Estilos Generales --- */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body { font-family: 'Lato', sans-serif; background-color: var(--light-bg); color: var(--dark-text); line-height: 1.6; }
+        h1, h2, h3 { font-family: 'Playfair Display', serif; color: var(--primary-blue); }
+        .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+        a { text-decoration: none; color: inherit; transition: color 0.3s ease; }
+        img { max-width: 100%; height: auto; display: block; }
+
+        /* --- Header --- */
+        header { background-color: var(--white); box-shadow: 0 2px 10px rgba(0,0,0,0.05); padding: 0.5rem 0; position: sticky; top: 0; z-index: 1000; }
+        nav { display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 1.5rem; font-weight: 700; color: var(--primary-blue); display: flex; align-items: center; gap: 10px; }
+        .logo-icon img { height: 50px; width: auto; }
+        .nav-links ul { display: flex; list-style: none; gap: 30px; }
+        .nav-links a:hover { color: var(--secondary-green); }
+        .btn-contact { background-color: var(--secondary-green); color: white; padding: 10px 20px; border-radius: 25px; font-weight: bold; transition: background-color 0.3s ease; }
+        .btn-contact:hover { background-color: #7cb342; color: white; }
+
+        /* --- Hero --- */
+        .hero { display: flex; align-items: center; justify-content: space-between; padding: 80px 0; min-height: 80vh; }
+        .hero-content { flex: 1; padding-right: 50px; }
+        .hero-content h1 { font-size: 3.5rem; line-height: 1.2; margin-bottom: 20px; }
+        .hero-content p.subtitle { font-size: 1.2rem; color: #666; margin-bottom: 30px; }
+        .hero-image { flex: 1; display: flex; justify-content: center; align-items: center; }
+        .main-logo-img { width: 100%; max-width: 450px; height: auto; filter: drop-shadow(0 10px 15px rgba(0,0,0,0.1)); }
+
+        /* --- Servicios --- */
+        .services { background-color: var(--white); padding: 80px 0; }
+        .section-title { text-align: center; margin-bottom: 50px; }
+        .section-title h2 { font-size: 2.5rem; margin-bottom: 10px; }
+        .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; }
+        .service-card { background: var(--light-bg); padding: 30px; border-radius: 10px; text-align: center; transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease; border: 1px solid var(--border-color); }
+        .service-card:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.08); border-color: var(--primary-blue); }
+        .service-card h3 { font-size: 1.2rem; margin-bottom: 10px; color: var(--dark-text); }
+
+        /* --- Testimonios --- */
+        .testimonials { padding: 80px 0; background-color: var(--white); }
+        .testimonials-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-top: 40px; }
+        .testimonial-card { background: var(--light-bg); padding: 30px; border-radius: 10px; border-left: 5px solid var(--secondary-green); box-shadow: 0 5px 15px rgba(0,0,0,0.05); }
+        .testimonial-text { font-style: italic; margin-bottom: 15px; color: #555; }
+        .testimonial-author { font-weight: bold; color: var(--primary-blue); text-align: right; }
+
+        /* --- Filosofía --- */
+        .philosophy { padding: 80px 0; text-align: center; background: linear-gradient(135deg, #f0f7ff 0%, #fff 100%); }
+        .philosophy-quote { font-size: 1.8rem; font-style: italic; color: var(--primary-blue); max-width: 800px; margin: 0 auto 30px auto; font-family: 'Playfair Display', serif; }
+        .health-icon svg { width: 60px; height: 60px; fill: var(--secondary-green); margin-bottom: 20px; }
+
+        /* --- Contacto --- */
+        .contact-section { padding: 80px 0; background-color: var(--light-bg); }
+        .contact-wrapper { display: flex; flex-wrap: wrap; gap: 50px; justify-content: center; }
+        .contact-info-box, .contact-form-box { flex: 1; min-width: 300px; background: var(--white); padding: 40px; border-radius: 15px; border: 1px solid var(--border-color); box-shadow: 0 5px 15px rgba(0,0,0,0.05); }
+        .form-group { margin-bottom: 20px; }
+        .form-group label { display: block; margin-bottom: 8px; font-weight: bold; color: var(--dark-text); }
+        .form-control { width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 5px; font-family: 'Lato', sans-serif; font-size: 1rem; transition: border-color 0.3s ease; }
+        .form-control:focus { outline: none; border-color: var(--primary-blue); box-shadow: 0 0 5px rgba(74, 144, 164, 0.3); }
+        .btn-submit { background-color: var(--primary-blue); color: white; padding: 12px 30px; border: none; border-radius: 25px; font-size: 1rem; cursor: pointer; transition: background-color 0.3s ease; width: 100%; }
+        .btn-submit:hover { background-color: #3a7a8c; }
+        .map-link { color: var(--primary-blue); font-weight: bold; text-decoration: underline; transition: color 0.3s ease; }
+        .map-link:hover { color: var(--secondary-green); }
+        
+        /* Estilo específico para el enlace de email */
+        .email-link {
+            color: var(--primary-blue);
+            font-weight: bold;
+            word-break: break-all; /* Para evitar que correos largos rompan el diseño en móvil */
+        }
+        .email-link:hover {
+            color: var(--secondary-green);
+            text-decoration: underline;
+        }
+
+        /* --- Botón WhatsApp --- */
+        .whatsapp-float { position: fixed; bottom: 30px; right: 30px; background-color: var(--whatsapp-green); color: white; width: 60px; height: 60px; border-radius: 50%; display: flex; justify-content: center; align-items: center; font-size: 30px; box-shadow: 2px 2px 10px rgba(0,0,0,0.2); z-index: 2000; transition: transform 0.3s ease; }
+        .whatsapp-float:hover { transform: scale(1.1); color: white; }
+
+        /* --- Footer --- */
+        footer { background-color: #2c3e50; color: white; padding: 60px 0 20px 0; }
+        .footer-content { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 40px; margin-bottom: 40px; }
+        .footer-info h3 { color: white; margin-bottom: 20px; }
+        .contact-item { display: flex; align-items: center; margin-bottom: 15px; gap: 10px; }
+        .social-media { margin-top: 20px; }
+        .social-icons { display: flex; gap: 15px; list-style: none; }
+        
+        /* ESTILOS ICONOS REDES SOCIALES */
+        .social-icon-link {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 40px;
+            height: 40px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            color: white;
+            font-size: 1.2rem;
+            transition: all 0.3s ease;
+        }
+        .social-icon-link:hover { transform: translateY(-3px); color: white; }
+        .social-icon-link.facebook:hover { background-color: var(--facebook-color); }
+        .social-icon-link.instagram:hover { background-color: var(--instagram-color); }
+        .social-icon-link.tiktok:hover { background-color: var(--tiktok-color); }
+        .social-icon-link.linkedin:hover { background-color: var(--linkedin-color); }
+
+        .copyright { text-align: center; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 20px; font-size: 0.9rem; color: #aaa; }
+        .legal-links a { color: #aaa; font-size: 0.85rem; margin: 0 10px; }
+        .legal-links a:hover { color: white; text-decoration: underline; }
+
+        /* --- Responsive --- */
+        @media (max-width: 768px) {
+            .hero { flex-direction: column-reverse; text-align: center; padding: 40px 0; }
+            .hero-content { padding-right: 0; margin-top: 40px; }
+            .hero-content h1 { font-size: 2.5rem; }
+            .nav-links { display: none; }
+            .footer-content { flex-direction: column; text-align: center; }
+            .contact-item { justify-content: center; }
+            .social-icons { justify-content: center; }
+            .logo-icon img { height: 40px; }
+            .whatsapp-float { width: 50px; height: 50px; font-size: 25px; bottom: 20px; right: 20px; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <div class="logo-icon">
+                        <img src="icono logo.jpg" alt="Icono de Quiromasaje Vital" width="50" height="50">
+                    </div>
+                    Quiromasaje Vital
+                </div>
+                <div class="nav-links">
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#servicios">Servicios</a></li>
+                        <li><a href="#testimonios">Opiniones</a></li>
+                        <li><a href="#filosofia">Filosofía</a></li>
+                        <li><a href="#contacto" class="btn-contact">Contacto</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero container">
+        <div class="hero-content">
+            <h1>Bienestar Integral para tu Cuerpo y Mente</h1>
+            <p class="subtitle">Francisco Pérez Toledo<br>Quiromasajista Integrativo</p>
+            <p>Descubre el equilibrio perfecto entre salud y vitalidad a través de nuestros tratamientos personalizados. Sin salud no podemos disfrutar de la vida.</p>
+            <br>
+            <a href="#contacto" class="btn-contact">Reserva tu Cita</a>
+        </div>
+        <div class="hero-image">
+            <img src="Logo Quiromasaje.jpg" alt="Logo de Quiromasaje Vital" class="main-logo-img" width="450" height="450">
+        </div>
+    </section>
+
+    <!-- Servicios -->
+    <section id="servicios" class="services">
+        <div class="container">
+            <div class="section-title">
+                <h2>Nuestros Servicios</h2>
+                <p>Tratamientos especializados para cada necesidad</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card"><h3>Quiromasaje Vital</h3><p>Equilibrio general y bienestar profundo.</p></div>
+                <div class="service-card"><h3>Quiromasaje Deportivo</h3><p>Preparación y recuperación muscular.</p></div>
+                <div class="service-card"><h3>Quiromasaje Drenante</h3><p>Eliminación de toxinas y líquidos.</p></div>
+                <div class="service-card"><h3>Quiromasaje Circulatorio</h3><p>Mejora del flujo sanguíneo.</p></div>
+                <div class="service-card"><h3>Quiromasaje Tonificante</h3><p>Energía y vitalidad para tu cuerpo.</p></div>
+                <div class="service-card"><h3>Quiromasaje Descontracturante</h3><p>Alivio de tensiones y dolores musculares.</p></div>
+                <div class="service-card"><h3>Ventosaterapia</h3><p>Terapia complementaria para aliviar dolor.</p></div>
+                <div class="service-card"><h3>Vendaje Neuromuscular</h3><p>Soporte y estabilización muscular.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonios -->
+    <section id="testimonios" class="testimonials">
+        <div class="container">
+            <div class="section-title">
+                <h2>Lo que dicen nuestros clientes</h2>
+                <p>Tu satisfacción es nuestra mejor carta de presentación</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"Después de varias sesiones de masaje descontracturante con Francisco, mi dolor de espalda ha desaparecido por completo. Muy profesional."</p>
+                    <p class="testimonial-author">- Ana M., S/C de Tenerife</p>
+                </div>
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"El masaje deportivo me ayudó mucho a recuperarme después de mis entrenamientos. Totalmente recomendable."</p>
+                    <p class="testimonial-author">- Carlos R., Deportista amateur</p>
+                </div>
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"Un ambiente muy relajante y un trato exquisito. El masaje drenante me dejó las piernas muchísimo más ligeras."</p>
+                    <p class="testimonial-author">- Laura G., Cliente habitual</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filosofía -->
+    <section id="filosofia" class="philosophy">
+        <div class="container">
+            <div class="health-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C7.58 2 4 5.58 4 10c0 2.65 1.29 5.02 3.29 6.58L12 22l4.71-5.42C18.71 15.02 20 12.65 20 10c0-4.42-3.58-8-8-8zm0 2c3.31 0 6 2.69 6 6 0 1.66-.68 3.16-1.79 4.24L12 19.17l-4.21-4.93C6.68 13.16 6 11.66 6 10c0-3.31 2.69-6 6-6z"/><path d="M12 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"/></svg>
+            </div>
+            <p class="philosophy-quote">"Sin salud no podemos disfrutar de la vida"</p>
+            <p>Nuestro enfoque integrativo busca no solo aliviar síntomas, sino promover un estado de bienestar duradero.</p>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="contact-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Contacta con Nosotros</h2>
+                <p>Estamos aquí para resolver tus dudas y reservar tu cita</p>
+            </div>
+            
+            <div class="contact-wrapper">
+                <div class="contact-info-box">
+                    <h3>Información</h3>
+                    <p style="margin-bottom: 20px;">No dudes en visitarnos o llamarnos para cualquier consulta sobre nuestros tratamientos.</p>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt" style="color: var(--primary-blue);"></i>
+                        <p><a href="https://www.google.com/maps/search/?api=1&query=C/+Juan+de+Aguilar,+11,+Santa+Cruz+de+Tenerife" target="_blank" rel="noopener noreferrer" class="map-link">C/ Juan de Aguilar, 11<br>S/C de Tenerife</a></p>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-phone-alt" style="color: var(--primary-blue);"></i>
+                        <p><a href="tel:628014804">628 014 804</a></p>
+                    </div>
+
+                    <!-- EMAIL AÑADIDO AQUÍ -->
+                    <div class="contact-item">
+                        <i class="fas fa-envelope" style="color: var(--primary-blue);"></i>
+                        <p><a href="mailto:quiromasaje.vital@gmail.com" class="email-link">quiromasaje.vital@gmail.com</a></p>
+                    </div>
+
+                    <div class="contact-item">
+                        <i class="fas fa-user" style="color: var(--primary-blue);"></i>
+                        <p>Francisco Pérez Toledo</p>
+                    </div>
+
+                    <!-- REDES SOCIALES -->
+                    <div class="social-media">
+                        <ul class="social-icons">
+                            <li><a href="https://facebook.com/tu_pagina" class="social-icon-link facebook" aria-label="Facebook" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="https://instagram.com/tu_usuario" class="social-icon-link instagram" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="https://tiktok.com/@tu_usuario" class="social-icon-link tiktok" aria-label="TikTok" target="_blank" rel="noopener noreferrer"><i class="fab fa-tiktok"></i></a></li>
+                            <li><a href="https://linkedin.com/in/tu_perfil" class="social-icon-link linkedin" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="contact-form-box">
+                    <h3>Envíanos un Mensaje</h3>
+                    <!-- IMPORTANTE: Reemplaza 'TU_ID_DE_FORMSPREE' con tu ID real de formspree.io -->
+                    <form action="https://formspree.io/f/TU_ID_DE_FORMSPREE" method="POST">
+                        <div class="form-group">
+                            <label for="name">Nombre Completo</label>
+                            <input type="text" id="name" name="name" class="form-control" required placeholder="Tu nombre">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Correo Electrónico</label>
+                            <input type="email" id="email" name="email" class="form-control" required placeholder="tu@email.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Teléfono (Opcional)</label>
+                            <input type="tel" id="phone" name="phone" class="form-control" placeholder="600 000 000">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Mensaje o Consulta</label>
+                            <textarea id="message" name="message" class="form-control" rows="5" required placeholder="¿En qué podemos ayudarte?"></textarea>
+                        </div>
+                        <button type="submit" class="btn-submit">Enviar Mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>Quiromasaje Vital</h3>
+                    <p>Tu centro de bienestar en Tenerife.</p>
+                    <!-- EMAIL EN EL FOOTER TAMBIÉN PARA MAYOR VISIBILIDAD -->
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:quiromasaje.vital@gmail.com" style="color: #ccc;">quiromasaje.vital@gmail.com</a></p>
+                </div>
+                <div class="footer-info">
+                    <h3>Enlaces Legales</h3>
+                    <div class="legal-links">
+                        <a href="aviso-legal.html">Aviso Legal</a> | 
+                        <a href="politica-privacidad.html">Política de Privacidad</a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; 2026 Quiromasaje Vital. Todos los derechos reservados.
+            </div>
+        </div>
+    </footer>
+
+    <!-- BOTÓN FLOTANTE WHATSAPP -->
+    <a href="https://wa.me/34628014804?text=Hola,%20me%20gustaría%20información%20sobre%20una%20cita." class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Chat en WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+</body>
+</html>
